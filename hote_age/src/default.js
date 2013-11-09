@@ -12,6 +12,7 @@ var BaseMan = enchant.Class.create(Sprite, {
     this.isDying = false;
     this.isDead = false;
     this.isTouched = false;
+    this.isPoint = false;
   },
 
   onenterframe: function(){
@@ -31,6 +32,7 @@ var BaseMan = enchant.Class.create(Sprite, {
       this.y -= 13;
       this.frame = 1;
     }else if(this.timeCount == 15 * 2 * this.durability()){
+      this.isPoint = true;
       this.y -= 13;
       this.frame = 2;
     }
@@ -60,6 +62,13 @@ var BaseMan = enchant.Class.create(Sprite, {
         this.isDead = true;
         this.opacity = 0;
       }
+    }
+  },
+
+  ontouchstart: function(){
+    if(this.isPoint){
+      core.score++;
+      this.scene.scoreLabel.text = core.score.toString();
     }
   },
 
@@ -204,6 +213,14 @@ var GameScene = enchant.Class.create(Scene, {
     this.addChild(this.bg);
     core.score = 0;
 
+    this.scoreLabel = new Label(core.score.toString());
+    this.scoreLabel.width = 200;
+    this.scoreLabel.textAlign = "center";
+    this.scoreLabel.moveTo(10, 50);
+    this.scoreLabel.font = "96px Sans-serif";
+    this.scoreLabel.color = "rgb(24, 24, 24)";
+    this.addChild(this.scoreLabel);
+
     var isAlive = function(){
       if(this.isDead){
         core.gameOverScene = new GameOverScene();
@@ -215,9 +232,11 @@ var GameScene = enchant.Class.create(Scene, {
       if(!this.isTouched){
         this.isTouched = true;
         _this.removeChild(this);
-        core.score++;
+        _this.number++;
       }
     };
+
+    this.number = 0;
 
     var man = new Man1();
     man.addEventListener("enterframe", isAlive);
@@ -248,6 +267,13 @@ var GameScene = enchant.Class.create(Scene, {
     man.addEventListener("enterframe", isAlive);
     man.addEventListener("touchstart", isTouched);
     this.addChild(man);
+  },
+
+  onenterframe: function(){
+    if(this.number > 5){
+      core.gameOverScene = new GameOverScene();
+      core.replaceScene(core.gameOverScene);
+    }
   }
 });
 
