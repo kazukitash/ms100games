@@ -37,13 +37,11 @@ class Player extends Sprite
 class Dai extends Sprite
   constructor: ->
     super(97,400)
-    @backgroundColor = "black"
     @moveTo 1022, 302
 
 class TobiBan extends Sprite
   constructor: ->
     super(140,20)
-    @backgroundColor = "black"
     @moveTo 750, 600
 
 class TitleScene extends Scene

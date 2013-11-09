@@ -58,7 +58,6 @@
 
     function Dai() {
       Dai.__super__.constructor.call(this, 97, 400);
-      this.backgroundColor = "black";
       this.moveTo(1022, 302);
     }
 
@@ -71,7 +70,6 @@
 
     function TobiBan() {
       TobiBan.__super__.constructor.call(this, 140, 20);
-      this.backgroundColor = "black";
       this.moveTo(750, 600);
     }
 
