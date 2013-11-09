@@ -68,11 +68,12 @@
 
     Bar.prototype.succ = function() {
       var next;
-      next = this.width - 545 / 13;
+      next = this.width - 545 / 11;
       if (0 <= next) {
         return this.width = next;
       } else {
-        return this.dispatchEvent(new Event("over"));
+        core.GameOverScene = new GameOverScene(this.scene.timer.remainingFrame());
+        return core.replaceScene(core.GameOverScene);
       }
     };
 
@@ -187,12 +188,6 @@
         this.bg.image = core.assets["game_over1.png"];
       }
       this.addChild(this.bg);
-      this.label = new Label(score.toString());
-      this.label.font = "80px Serif";
-      this.label.color = "white";
-      this.label.x = (HQ_GAME_WIDTH - this.label.width) / 2;
-      this.label.y = (HQ_GAME_HEIGHT - this.label.height) / 2;
-      this.addChild(this.label);
     }
 
     GameOverScene.prototype.ontouchstart = function() {

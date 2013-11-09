@@ -39,7 +39,7 @@ var TitleScene = enchant.Class.create(Scene, {
   initialize: function(){
     Scene.call(this);
     this.bg = new Sprite(HQ_GAME_WIDTH, HQ_GAME_HEIGHT);
-    this.bg.image = core.assets["start.png"];
+    this.bg.image = core.assets["title.png"];
     this.addChild(this.bg);
 
     this.score = -1;
@@ -178,7 +178,7 @@ window.onload = function(){
   assets.push("chara.png");
   assets.push("win.png");
   assets.push("exclamation.png");
-  assets.push("start.png");
+  assets.push("title.png");
   assets.push("game.png");
   assets.push("game_over.png");
   assets.push("how.png");

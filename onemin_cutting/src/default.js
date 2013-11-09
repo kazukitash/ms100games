@@ -109,7 +109,7 @@ var TitleScene = enchant.Class.create(Scene, {
   initialize: function(){
     Scene.call(this)
     this.bg = new Sprite(GAME_WIDTH, GAME_HEIGHT);
-    this.bg.image = core.assets["1min_cutting1.png"];
+    this.bg.image = core.assets["title.png"];
     this.addChild(this.bg);
   },
 
@@ -205,7 +205,7 @@ window.onload = function(){
   assets.push("bronze.png");
   assets.push("silver.png");
   assets.push("gold.png");
-  assets.push("1min_cutting1.png");
+  assets.push("title.png");
   assets.push("1min_cutting2.png");
   assets.push("1min_cutting3.png");
   core.preload(assets);

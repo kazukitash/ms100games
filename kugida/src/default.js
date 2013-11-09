@@ -46,7 +46,7 @@ var TitleScene = enchant.Class.create(Scene, {
   initialize: function(){
     Scene.call(this);
     var bg = new Sprite(GAME_WIDTH, GAME_HEIGHT);
-    bg.image = core.assets["kugida1.png"];
+    bg.image = core.assets["title.png"];
     this.addChild(bg);
   }
 });
@@ -105,7 +105,7 @@ window.onload = function(){
   assets.push("kugida2_1.png");
   assets.push("kugida2_2.png");
   assets.push("kugida2_4.png");
-  assets.push("kugida1.png");
+  assets.push("title.png");
   assets.push("kugida3.png");
   core.preload(assets);
 

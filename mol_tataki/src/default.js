@@ -107,7 +107,7 @@ var TitleScene = enchant.Class.create(enchant.Scene, {
   initialize: function(){
     Scene.call(this);
     this.bg = new Sprite(GAME_WIDTH, GAME_HEIGHT);
-    this.bg.image = core.assets["moltataki.png"];
+    this.bg.image = core.assets["title.png"];
     this.addChild(this.bg);
   },
 
@@ -206,7 +206,7 @@ var GameOverScene = enchant.Class.create(enchant.Scene, {
 window.onload = function(){
   core = new Core(GAME_WIDTH, GAME_HEIGHT);
   var assets = [];
-  assets.push("moltataki.png");
+  assets.push("title.png");
   assets.push("moltataki2_1.png");
   assets.push("moltataki2_2.png");
   assets.push("moltataki2_3.png");

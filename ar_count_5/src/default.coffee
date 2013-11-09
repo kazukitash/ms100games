@@ -39,11 +39,12 @@ class Bar extends Sprite
     @moveTo(22, 602)
 
   succ: ->
-    next = @width - 545 / 13
+    next = @width - 545 / 11
     if 0 <= next
       @width = next
     else
-      @dispatchEvent new Event "over"
+      core.GameOverScene = new GameOverScene(@scene.timer.remainingFrame())
+      core.replaceScene(core.GameOverScene)
 
 class Water extends Sprite
   constructor: ->
@@ -127,13 +128,6 @@ class GameOverScene extends Scene
       @bg.image = core.assets["game_over1.png"]
 
     @addChild(@bg)
-
-    @label       = new Label(score.toString())
-    @label.font  = "80px Serif"
-    @label.color = "white"
-    @label.x     = (HQ_GAME_WIDTH - @label.width) / 2
-    @label.y     = (HQ_GAME_HEIGHT - @label.height) / 2
-    @addChild(@label)
 
   ontouchstart: ->
     if @startAt + 1 * core.fps < core.frame
