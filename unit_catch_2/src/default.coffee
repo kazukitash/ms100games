@@ -554,8 +554,8 @@ class GameOverScene extends Scene
     @label       = new Label(score.toString())
     @label.font  = "80px Serif"
     @label.color = "white"
-    @label.x     = (HQ_GAME_WIDTH - @label.width) / 2 + 100
-    @label.y     = (HQ_GAME_HEIGHT - @label.height) / 2
+    @label.x     = (HQ_GAME_WIDTH - @label.width) / 2 + 280
+    @label.y     = (HQ_GAME_HEIGHT - @label.height) / 2 - 140
     @addChild(@label)
 
   ontouchstart: ->

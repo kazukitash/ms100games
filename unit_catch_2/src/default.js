@@ -806,8 +806,8 @@
       this.label = new Label(score.toString());
       this.label.font = "80px Serif";
       this.label.color = "white";
-      this.label.x = (HQ_GAME_WIDTH - this.label.width) / 2 + 100;
-      this.label.y = (HQ_GAME_HEIGHT - this.label.height) / 2;
+      this.label.x = (HQ_GAME_WIDTH - this.label.width) / 2 + 280;
+      this.label.y = (HQ_GAME_HEIGHT - this.label.height) / 2 - 140;
       this.addChild(this.label);
     }
 
