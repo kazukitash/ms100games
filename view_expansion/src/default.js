@@ -160,7 +160,7 @@ window.onload = function(){
   var assets = [];
   assets.push("play.png");
   assets.push("gameover.png");
-  assets.push("start.png");
+  assets.push("title.png");
   core.preload(assets);
 
   core.onload = function(){
