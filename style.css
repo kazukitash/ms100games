@@ -1,5 +1,16 @@
 .game {
   float:left;
+  position: relative;
+  width: 320px;
+  min-height: 320px;
+}
+
+.play_btn{
+  position: absolute;
+  width: 110px;
+  margin-top: 36px;
+  left: 32%;
+  opacity: 0.95;
 }
 
 .game-list {
