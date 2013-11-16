@@ -802,7 +802,6 @@
     assets.push("title.png");
     assets.push("game.png");
     assets.push("game_over.png");
-    assets.push("");
     core.preload(assets);
     core.onload = function() {
       this.titleScene = new TitleScene();
