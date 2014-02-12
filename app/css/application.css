@@ -72,6 +72,8 @@
   max-height: 550px; }
   .content-body--form .content-body--form__title {
     margin: 30px 30px; }
+  .content-body--form .content-body--form__img {
+    margin: 20px 40px; }
 
 .content-body--sample {
   position: relative; }
@@ -94,13 +96,31 @@
     top: 180px;
     right: 60px; }
   .content-body--sample .game-list {
-    float: left; }
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto; }
     .content-body--sample .game-list .game {
-      width: 320px; }
-      .content-body--sample .game-list .game a .game__play-btn {
-        position: relative;
-        top: 50px;
-        left: 178px; }
+      float: left;
+      position: relative;
+      width: 245px;
+      min-height: 300px;
+      margin: 15px 37.5px; }
+      .content-body--sample .game-list .game a:hover {
+        color: #16aef0; }
+      .content-body--sample .game-list .game a {
+        text-decoration: none;
+        color: #555; }
+        .content-body--sample .game-list .game a .game__play-btn {
+          position: absolute;
+          width: 95px;
+          margin-top: 20px;
+          left: 31%;
+          opacity: 0.95; }
+        .content-body--sample .game-list .game a img {
+          width: 245px; }
+        .content-body--sample .game-list .game a .title {
+          margin: 2px 0px 4px 0px;
+          font-weight: 600; }
 
 .content-body, .content-body--app, .content-body--character, .content-body--development, .content-body--form, .content-body--sample {
   clear: both;
