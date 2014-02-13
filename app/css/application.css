@@ -15,7 +15,9 @@
   width: 960px; }
 
 .boards {
-  margin-top: 55px; }
+  position: absolute;
+  bottom: 0;
+  bottom: 12%; }
   .boards .boards__link, .boards .boards__link1, .boards .boards__link5 {
     margin: 0px 7px; }
   .boards .boards__link1 {
@@ -25,8 +27,8 @@
 
 .bottom-back-image {
   height: 700px;
-  width: auto;
-  background-size: 1492px 746px;
+  min-width: 960px;
+  background-size: cover;
   /* Firefox */
   background: url(../img/footer.png), -moz-linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
   /* Chrom と Safari */
@@ -55,8 +57,8 @@
   margin-left: 25px; }
 .content-body--character .umekomisen {
   clear: both;
-  border-top: 2px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px white;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px white;
   margin: 0px 35px; }
 
 .content-body--development .content-body--development__title {
@@ -64,16 +66,18 @@
 .content-body--development .content-body--development__tab {
   margin: 0px 15px; }
 .content-body--development .umekomisen {
-  border-top: 2px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px white;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px white;
   margin: 5px; }
 
 .content-body--form {
   max-height: 550px; }
   .content-body--form .content-body--form__title {
     margin: 30px 30px; }
-  .content-body--form .content-body--form__img {
-    margin: 20px 40px; }
+  .content-body--form .content-body--form__box {
+    margin: 20px 0px; }
+    .content-body--form .content-body--form__box .content-body--form__box__btn {
+      margin: 0px 15px; }
 
 .content-body--sample {
   position: relative; }
@@ -103,7 +107,7 @@
       float: left;
       position: relative;
       width: 245px;
-      min-height: 300px;
+      min-height: 400px;
       margin: 15px 37.5px; }
       .content-body--sample .game-list .game a:hover {
         color: #16aef0; }
@@ -122,53 +126,124 @@
           margin: 2px 0px 4px 0px;
           font-weight: 600; }
 
-.content-body, .content-body--app, .content-body--character, .content-body--development, .content-body--form, .content-body--sample {
+.content-body, .content-body--app, .content-body--character, .content-body--development, .content-body--form{
   clear: both;
   background-color: rgba(255, 255, 255, 0.65);
   position: relative;
   height: 1348px; }
+.content-body--sample{
+  clear: both;
+  background-color: rgba(255, 255, 255, 0.65);
+  position: relative;
+  min-height: 14400px; }
+.footer--homes {
+  position: relative;
+  bottom: 0px; }
+  .footer--homes .declar {
+    color: rgba(255, 255, 255, 0.5);
+    top: 650px;
+    left: 300px;
+    position: relative; }
+    .footer--homes .declar a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.5); }
+    .footer--homes .declar a:hover {
+      color: white; }
+  .footer--homes .company {
+    color: rgba(255, 255, 255, 0.5);
+    top: 650px;
+    right: 300px;
+    position: relative; }
+
+.footer {
+  bottom: 0px;
+  min-height: 80px;
+  width: auto;
+  /* Firefox */
+  background: -moz-linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
+  /* Chrom と Safari */
+  background: -webkit-gradient(linear, center top, center bottom, from(#8e5424), to(#4f2a0d));
+  /* 共通 */
+  background: linear-gradient(top center, #8e5424 0%, #4f2a0d 100%); }
+  .footer .declar {
+    color: rgba(255, 255, 255, 0.5);
+    top: 30px;
+    left: 300px;
+    position: relative; }
+    .footer .declar a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.5); }
+    .footer .declar a:hover {
+      color: white; }
+  .footer .company {
+    color: rgba(255, 255, 255, 0.5);
+    top: 30px;
+    right: 300px;
+    position: relative; }
 
 .header {
   width: 100%; }
   .header .header__title {
-    width: 550px;
-    height: auto;
-    margin: 50px 0px; }
+    margin: 50px 0px;
+    margin-left: -60px; }
   .header .header__cloud, .header .header__facebook, .header .header__twitter {
-    width: 185px;
-    hegiht: auto; }
+    position: absolute; }
   .header .header__facebook {
-    margin: 60px 0px; }
+    margin-top: 50px;
+    margin-left: 20px; }
   .header .header__twitter {
-    margin: 120px 0px; }
+    right: 0;
+    margin-top: 80px; }
 
-.holes {
-  margin-top: 10px;
-  width: 960px; }
-  .holes .holes__hole1 {
-    margin-top: 70px;
-    margin-left: 230px; }
-  .holes .holes__hole2 {
-    margin: 0px 21px; }
-  .holes .holes__hole3 {
-    margin-top: 70px;
-    margin-right: 230px; }
+.holes .holes__hole, .holes .holes__hole1, .holes .holes__hole2, .holes .holes__hole3 {
+  position: absolute; }
+.holes .holes__hole1 {
+  left: 0;
+  margin-left: 160px;
+  margin-top: 180px; }
+.holes .holes__hole2 {
+  margin-top: 130px;
+  margin-left: 395px; }
+.holes .holes__hole3 {
+  right: 0;
+  margin-right: 145px;
+  margin-top: 25px; }
 
 .sub-header {
-  margin: 30px 16px;
-  height: 62px;
-  width: 928px; }
+  width: 960px;
+  height: 67px;
+  margin: 20px 0px; }
+  .sub-header .sub-header__title {
+    desplay: block;
+    float: left;
+    margin: 11px 0px; }
+  .sub-header .sub-header__clouds {
+    width: 720px; }
+    .sub-header .sub-header__clouds .sub-header__cloud, .sub-header .sub-header__clouds .sub-header__cloud--active {
+      text-align: center;
+      width: 144px;
+      display: block;
+      float: left; }
+    .sub-header .sub-header__clouds .sub-header__cloud--active {
+      margin-top: 4px; }
 
 .top-back-image, .top-back-image--fixed {
   background-image: url(../img/back.png);
-  background-size: 1517px 746px;
-  width: auto;
+  background-size: cover;
+  min-width: 960px;
   min-height: 746px;
   background-position: center top;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
+
+.top-content {
+  width: 960px;
+  height: 746px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative; }
 
 .top-back-image--fixed {
   background-image: url(../img/back-none.png);
-  background-size: cover;
   background-attachment: fixed;
   padding-bottom: 60px; }
