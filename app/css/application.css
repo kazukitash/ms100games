@@ -122,9 +122,14 @@
           opacity: 0.95; }
         .content-body--sample .game-list .game a img {
           width: 245px; }
+        .content-body--sample .game-list .game .game__sourcecode-btn{
+          margin: 0px 0px;}
         .content-body--sample .game-list .game a .title {
           margin: 2px 0px 4px 0px;
           font-weight: 600; }
+        .content-body--sample .game-list .game .game-content {
+          height:100px;
+        }
 
 .content-body, .content-body--app, .content-body--character, .content-body--development, .content-body--form{
   clear: both;
