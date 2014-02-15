@@ -69,7 +69,25 @@
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px white;
   margin: 5px; }
-
+.content-body--development .kaihatutekisuto {
+  margin: 30px 0px; }
+.content-body--development .kaihatutekisuto .tekisuto-img{
+  display: inline-block;
+  vertical-align: top; }
+.content-body--development .kaihatutekisuto .tekisuto-img .tekisuto{
+  width: 220px;
+  height: 240px;
+  border: 1px solid #ccc;
+  background-color: #fff; }
+.content-body--development .kaihatutekisuto .tekisuto-img .download-btn{
+  margin-top: 20px; }
+.content-body--development .kaihatutekisuto .tekisuto-tc{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+}
+.content-body--development .kaihatutekisuto .tekisuto-tc img{
+  width: 300px; }
 .content-body--form {
   max-height: 550px; }
   .content-body--form .content-body--form__title {
