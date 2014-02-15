@@ -102,7 +102,7 @@
   .content-body--form .content-body--form__box {
     margin: 28px 0px; }
     .content-body--form .content-body--form__box .content-body--form__box__btn {
-      margin: 0px 25px; }
+      margin: 0px 10px; }
 .content-body--sample {
   position: relative; }
   .content-body--sample .content-body--sample__title {
@@ -131,7 +131,7 @@
       float: left;
       position: relative;
       width: 245px;
-      min-height: 400px;
+      min-height: 360px;
       margin: 15px 37.5px; }
       .content-body--sample .game-list .game a:hover {
         color: #16aef0; }
@@ -147,7 +147,9 @@
         .content-body--sample .game-list .game a img {
           width: 245px; }
         .content-body--sample .game-list .game .game__sourcecode-btn{
-          margin: 0px 0px;}
+          margin: 4px 0px;}
+        .content-body--sample .game-list .game .game__txt{
+          height: 70px; }
         .content-body--sample .game-list .game a .title {
           margin: 2px 0px 4px 0px;
           font-weight: 600; }
@@ -164,7 +166,7 @@
   clear: both;
   background-color: rgba(255, 255, 255, 0.65);
   position: relative;
-  min-height: 14400px; }
+  min-height: 13150px; }
 .footer--homes {
   position: relative;
   bottom: 0px; }
