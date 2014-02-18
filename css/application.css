@@ -81,11 +81,10 @@
 .content-body--development .kaihatutekisuto .tekisuto-img{
   display: inline-block;
   vertical-align: top; }
-.content-body--development .kaihatutekisuto .tekisuto-img .tekisuto{
+.content-body--development .kaihatutekisuto .tekisuto-img .tekisuto img{
   width: 220px;
-  height: 240px;
-  border: 1px solid #ccc;
-  background-color: #fff; }
+  height: 260px;
+  border: 1px solid #999;}
 .content-body--development .kaihatutekisuto .tekisuto-img .download-btn{
   margin-top: 20px; }
 .content-body--development .kaihatutekisuto .tekisuto-tc{
