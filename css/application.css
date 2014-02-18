@@ -169,21 +169,21 @@
 .footer--homes {
   position: relative;
   bottom: 0px; }
-  .footer--homes .declar {
+  .footer--homes .content.container .row .declar.col-xs-6 {
     color: rgba(255, 255, 255, 0.5);
     top: 650px;
-    left: 300px;
-    position: relative; }
-    .footer--homes .declar a {
+    position: relative;
+    text-align: center; }
+    .footer--homes .content.container .row .declar.col-xs-6 a {
       text-decoration: none;
       color: rgba(255, 255, 255, 0.5); }
-    .footer--homes .declar a:hover {
+    .footer--homes .content.container .row .declar.col-xs-6 a:hover {
       color: white; }
-  .footer--homes .company {
+  .footer--homes .content.container .row .company.col-xs-6 {
     color: rgba(255, 255, 255, 0.5);
     top: 650px;
-    right: 300px;
-    position: relative; }
+    position: relative;
+    text-align: center; }
 
 .footer {
   bottom: 0px;
@@ -198,7 +198,7 @@
   .footer .declar {
     color: rgba(255, 255, 255, 0.5);
     top: 30px;
-    left: 300px;
+    text-align: center;
     position: relative; }
     .footer .declar a {
       text-decoration: none;
@@ -208,7 +208,7 @@
   .footer .company {
     color: rgba(255, 255, 255, 0.5);
     top: 30px;
-    right: 300px;
+    text-align: center;
     position: relative; }
 
 .header {
