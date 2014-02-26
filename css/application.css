@@ -134,7 +134,7 @@ body{
 .content-body--development .umekomisen {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px white;
-  margin: 5px; }
+  margin: 5px 0px; }
 .content-body--development .kaihatutekisuto {
   margin: 30px 0px; }
 .content-body--development .kaihatutekisuto .tekisuto-img{
