@@ -119,7 +119,13 @@ body{
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px white;
   margin: 0px 35px; }
-
+.content-body--development .benkyoukai__text{
+  text-align: center;
+}
+.content-body--development a.benkyoukai img{
+  width: 530px;
+  margin: 0px 40px;
+}
 .content-body--development .content-body--development__title {
   margin: 30px 30px; }
 .content-body--development .content-body--development__tab {
@@ -155,6 +161,13 @@ body{
 }
 .content-body--development .kaihatutekisuto .tekisuto-tc img{
   width: 300px; }
+.content-body--development .sankousiryou__text{
+  margin-top: 40px; }
+.content-body--development .sankousiryou__text h4{
+  margin: 10px 0px;
+}
+.content-body--development ul{
+  margin: 30px 25px; }
 .content-body--form {
   max-height: 550px; }
   .content-body--form .content-body--form__title {
@@ -235,7 +248,7 @@ body{
   clear: both;
   background-color: rgba(255, 255, 255, 0.8);
   position: relative;
-  height: 1400px; }
+  height: 1460px; }
 .content-body--sample{
   clear: both;
   background-color: rgba(255, 255, 255, 0.8);
