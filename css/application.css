@@ -184,6 +184,9 @@ body{
       margin-left: 120px;
       width: 50px;
     }
+.content-body--development #benkyoukai{
+  margin-top: 20px;
+}
 .content-body--sample {
   position: relative; }
   .content-body--sample .content-body--sample__title {
@@ -248,7 +251,7 @@ body{
   clear: both;
   background-color: rgba(255, 255, 255, 0.8);
   position: relative;
-  height: 1460px; }
+  height: 1480px; }
 .content-body--sample{
   clear: both;
   background-color: rgba(255, 255, 255, 0.8);
