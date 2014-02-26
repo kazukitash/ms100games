@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body{
+  font-family: "Lucida Grande","segoe UI","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN",Meiryo,Arial,sans-serif;
+}
 .c__red {
   color: red; }
 
@@ -48,7 +51,6 @@
   margin-bottom: 6px;
   font-size: 13px;
   color: #5f3f24;
-  font-family: "Lucida Grande","segoe UI","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN",Meiryo,Arial,sans-serif;
 }
 
 .footer-content-image{
@@ -291,6 +293,9 @@
   right: 0;
   margin-right: 145px;
   margin-top: 25px; }
+.holes .holes__hole3:hover{
+  cursor: pointer;
+}
 
 .sub-header {
   width: 960px;
