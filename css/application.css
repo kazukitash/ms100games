@@ -14,6 +14,10 @@
 .container {
   width: 960px; }
 
+.clear{
+  clear: both;
+}
+
 .boards {
   position: absolute;
   bottom: 0;
@@ -30,13 +34,57 @@
   min-width: 960px;
   background-size: cover;
   /* Firefox */
-  background: url(../img/footer.png), -moz-linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
+  background: -moz-linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
   /* Chrom と Safari */
-  background: url(../img/footer.png), -webkit-gradient(linear, center top, center bottom, from(#8e5424), to(#4f2a0d));
+  background: -webkit-gradient(linear, center top, center bottom, from(#8e5424), to(#4f2a0d));
   /* 共通 */
-  background: url(../img/footer.png), linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
+  background: linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
   background-position: top center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative;
+  }
+
+.bottom-back-image p{
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #5f3f24;
+}
+
+.footer-content-image{
+  height: 700px;
+  width: 960px;
+  background: url("../img/footer.png");
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-site{
+  position: absolute;
+  margin-left: 55px;
+  margin-top: 160px;
+}
+
+.development-history{
+  position: absolute;
+  right: 0;
+  margin-right: 35px;
+  margin-top: 77px;
+}
+
+.about-license{
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 375px;
+}
+
+.about-license a{
+  color: #5f3f24;
+  text-decoration: underline;
+}
 
 .box {
   height: 140px; }
@@ -167,22 +215,24 @@
   position: relative;
   min-height: 13150px; }
 .footer--homes {
-  position: relative;
+  position: absolute;
+  width: 960px;
+  margin-bottom: 20px;
   bottom: 0px; }
-  .footer--homes .content.container .row .declar.col-xs-6 {
+  .footer--homes .declar{
     color: rgba(255, 255, 255, 0.5);
-    top: 650px;
-    position: relative;
+    float: left;
+    width: 480px;
     text-align: center; }
-    .footer--homes .content.container .row .declar.col-xs-6 a {
+    .footer--homes .declar a {
       text-decoration: none;
       color: rgba(255, 255, 255, 0.5); }
-    .footer--homes .content.container .row .declar.col-xs-6 a:hover {
+    .footer--homes .declar a:hover {
       color: white; }
-  .footer--homes .content.container .row .company.col-xs-6 {
+  .footer--homes .company {
     color: rgba(255, 255, 255, 0.5);
-    top: 650px;
-    position: relative;
+    float: left;
+    width: 480px;
     text-align: center; }
 
 .footer {
