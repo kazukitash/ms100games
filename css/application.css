@@ -144,6 +144,8 @@ body{
   width: 220px;
   height: 260px;
   border: 1px solid #999;}
+.content-body--development .kaihatutekisuto .tekisuto-img .download-btn:hover{
+  opacity: 0.7; }
 .content-body--development .kaihatutekisuto .tekisuto-img .download-btn{
   margin-top: 20px; }
 .content-body--development .kaihatutekisuto .tekisuto-tc{
