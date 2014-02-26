@@ -196,6 +196,8 @@ body{
           opacity: 0.95; }
         .content-body--sample .game-list .game a img {
           width: 245px; }
+        .content-body--sample .game-list .game .game__sourcecode-btn:hover{
+          opacity: 0.7; }
         .content-body--sample .game-list .game .game__sourcecode-btn{
           margin: 4px 0px;}
         .content-body--sample .game-list .game .game__txt{
