@@ -159,8 +159,16 @@ body{
     margin: 30px 30px; }
   .content-body--form .content-body--form__box {
     margin: 28px 0px; }
-    .content-body--form .content-body--form__box .content-body--form__box__btn {
-      margin: 0px 10px; }
+    .content-body--form__box__img-icon{
+      margin-right: 30px;
+      margin-left: 120px;
+      width: 50px;
+    }
+    .content-body--form__box__img-icon2{
+      margin-right: 32px;
+      margin-left: 120px;
+      width: 50px;
+    }
 .content-body--sample {
   position: relative; }
   .content-body--sample .content-body--sample__title {
