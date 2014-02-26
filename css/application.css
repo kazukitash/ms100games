@@ -261,7 +261,6 @@
     top: 30px;
     text-align: center;
     position: relative; }
-
 .header {
   width: 100%; }
   .header .header__title {
@@ -303,6 +302,8 @@
     margin: 11px 0px; }
   .sub-header .sub-header__clouds {
     width: 720px; }
+    .sub-header .sub-header__clouds .sub-header__cloud:hover{
+      opacity: 0.7; }
     .sub-header .sub-header__clouds .sub-header__cloud, .sub-header .sub-header__clouds .sub-header__cloud--active {
       text-align: center;
       width: 144px;
