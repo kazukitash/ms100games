@@ -30,13 +30,58 @@
   min-width: 960px;
   background-size: cover;
   /* Firefox */
-  background: url(../img/footer.png), -moz-linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
+  background: -moz-linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
   /* Chrom と Safari */
-  background: url(../img/footer.png), -webkit-gradient(linear, center top, center bottom, from(#8e5424), to(#4f2a0d));
+  background: -webkit-gradient(linear, center top, center bottom, from(#8e5424), to(#4f2a0d));
   /* 共通 */
-  background: url(../img/footer.png), linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
+  background: linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
   background-position: top center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative;
+  }
+
+.bottom-back-image p{
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #5f3f24;
+  font-family: "Lucida Grande","segoe UI","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN",Meiryo,Arial,sans-serif;
+}
+
+.footer-content-image{
+  height: 700px;
+  width: 960px;
+  background: url("../img/footer.png");
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-site{
+  position: absolute;
+  margin-left: 38px;
+  margin-top: 150px;
+}
+
+.development-history{
+  position: absolute;
+  right: 0;
+  margin-right: 28px;
+  margin-top: 82px;
+}
+
+.about-license{
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 405px;
+}
+
+.about-license a{
+  color: #5f3f24;
+  text-decoration: underline;
+}
 
 .box {
   height: 140px; }
@@ -167,22 +212,24 @@
   position: relative;
   min-height: 13150px; }
 .footer--homes {
-  position: relative;
+  position: absolute;
+  width: 960px;
+  margin-bottom: 20px;
   bottom: 0px; }
-  .footer--homes .content.container .row .declar.col-xs-6 {
+  .footer--homes .declar{
     color: rgba(255, 255, 255, 0.5);
-    top: 650px;
-    position: relative;
+    float: left;
+    width: 480px;
     text-align: center; }
-    .footer--homes .content.container .row .declar.col-xs-6 a {
+    .footer--homes .declar a {
       text-decoration: none;
       color: rgba(255, 255, 255, 0.5); }
-    .footer--homes .content.container .row .declar.col-xs-6 a:hover {
+    .footer--homes .declar a:hover {
       color: white; }
-  .footer--homes .content.container .row .company.col-xs-6 {
+  .footer--homes .company {
     color: rgba(255, 255, 255, 0.5);
-    top: 650px;
-    position: relative;
+    float: left;
+    width: 480px;
     text-align: center; }
 
 .footer {
@@ -224,6 +271,9 @@
   .header .header__twitter {
     right: 0;
     margin-top: 80px; }
+  .header .header__facebook:hover, .header .header__twitter:hover{
+    opacity: 0.7;
+  }
 
 .holes .holes__hole, .holes .holes__hole1, .holes .holes__hole2, .holes .holes__hole3 {
   position: absolute; }
